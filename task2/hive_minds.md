@@ -9,7 +9,7 @@ WIP
 ```
 Our results printed out:
 
-![SSH service status on head note](WIP.jpg)
+![SSH service status on head note](Question1.png)
 
 Process and other commands used:
 WIP
@@ -23,7 +23,7 @@ WIP
 ```
 Our results printed out:
 
-![List of running services on head note](WIP.jpg)
+![List of running services on head note](Question2.png)
 
 Process and other commands used:
 WIP
@@ -37,7 +37,7 @@ Using htop or btop on com1 or com2, identify the SSH process:
 ```
 Our results printed out:
 
-![Identifiable SSH process](WIP.jpg)
+![Identifiable SSH process](Question3.png)
 
 Process and other commands used:
 WIP
@@ -61,7 +61,7 @@ Use journalctl (on the head node) to retrieve all SSH logs from the last hour:
 WIP
 ```
 
-![List of SSH logs from last hour](WIP.jpg)
+![List of SSH logs from last hour](Question5.png)
 
 Process and other commands used:
 WIP
