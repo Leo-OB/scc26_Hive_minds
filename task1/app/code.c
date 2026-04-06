@@ -1,7 +1,8 @@
 // INCLUDES
 #include <stdio.h>
 #include "code.h"
-
+#include <sys/stat.h>
+#include <sys/types.h>
 // GLOBALS
 
 
