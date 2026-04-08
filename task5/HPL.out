@@ -16,11 +16,11 @@ Gflops : Rate of execution for solving the linear system.
 
 The following parameter values will be used:
 
-N      :   35000 
-NB     :     180 
+N      :   60000 
+NB     :     245      256 
 PMAP   : Row-major process mapping
-P      :       4 
-Q      :       8 
+P      :       3 
+Q      :      16 
 PFACT  :   Crout 
 NBMIN  :       2 
 NDIV   :       2 
@@ -44,17 +44,27 @@ ALIGN  : 8 double precision words
 ================================================================================
 T/V                N    NB     P     Q               Time                 Gflops
 --------------------------------------------------------------------------------
-WR00C2C2       35000   180     4     8             112.72             2.5358e+02
-HPL_pdgesv() start time Tue Apr  7 23:03:31 2026
+WR00C2C2       60000   245     3    16             351.14             4.1011e+02
+HPL_pdgesv() start time Wed Apr  8 09:37:58 2026
 
-HPL_pdgesv() end time   Tue Apr  7 23:05:24 2026
+HPL_pdgesv() end time   Wed Apr  8 09:43:50 2026
 
 --------------------------------------------------------------------------------
-||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=   3.07018587e-03 ...... PASSED
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=   1.94506036e-03 ...... PASSED
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR00C2C2       60000   256     3    16             339.68             4.2394e+02
+HPL_pdgesv() start time Wed Apr  8 09:43:54 2026
+
+HPL_pdgesv() end time   Wed Apr  8 09:49:34 2026
+
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=   2.26255164e-03 ...... PASSED
 ================================================================================
 
-Finished      1 tests with the following results:
-              1 tests completed and passed residual checks,
+Finished      2 tests with the following results:
+              2 tests completed and passed residual checks,
               0 tests completed and failed residual checks,
               0 tests skipped because of illegal input values.
 --------------------------------------------------------------------------------
