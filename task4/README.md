@@ -245,14 +245,17 @@ We will now consider what affect each parameter has on the outcome.
 
 * ### Varying number of qubits
 
-   Write a section discussing the affect of varying the number of qubits.<br>
-   Vary `num_qubits` and see how high you can go. Label visualisation of maximum as `qv_experiment_MAXqubits.png` in the images folder.<br>
-   I only expect one image when you have reached the highest number of qubits the system can handle.<br>
+   The affect of varying `num_qubits`, and max qubit: WIP
+   <br>
    > `qubits`: number or list of physical qubits to be simulated for the experiment.
-
-
+   
+   ![Image for max qubits result](images/qv_experiment_MAXqubits.png)
 *  ### Varying number of shots
 
-   Write a section similar to [varying depth](#varying-volume-depth) discussing the affect of varying the number of shots.<br>
-   Vary `num_shots`. Minimum of 2 images presented in an easily understandable format like a table or bullet points with discussion blocks.<br>
+  The affect of varying the number of `num_shots`: WIP
    >`shots`: used for sampling statistics, number of repetitions of each circuit. A larger number of shots will be more demanding on the system.
+
+   | **Case 1** `num_shots=10` (default) | **Case 2** `num_shots=15` | **Case 3** `num_shots=20` |
+   |-------------------------------------|---------------------------|---------------------------|
+   | `num_qubits=(2,20)`<br>`qv_depth=5`<br>`num_shots=10`<br><br> <img src="images/qv_experiment_qbt20_dep5_shot10.png" width="400"> | `num_qubits=(2,20)`<br>`qv_depth=5`<br>`num_shots=15`<br><br> <img src="images/qv_experiment_NUMshots15.png" width="400"> | `num_qubits=(2,20)`<br>`qv_depth=10`<br>`num_shots=20`<br><br> <img src="images/qv_experiment_NUMshots20.png" width="400"> 
+
